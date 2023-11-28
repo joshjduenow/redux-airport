@@ -5,13 +5,15 @@ function AirlineTable() {
 
   return (
     <table>
-      {airlines.map((airline) => {
-        return (
-          <tr>
-            <td>{airline}</td>
-          </tr>
-        );
-      })}
+      <tbody>
+        {airlines.map((airline) => {
+          return (
+            <tr>
+              <td>{airline}</td>
+            </tr>
+          );
+        })}
+      </tbody>
     </table>
   );
 }
