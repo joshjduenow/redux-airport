@@ -8,6 +8,11 @@ import { Provider } from 'react-redux'
 /** TODO: Create store */
 
 const airlines = (state=[], action) => {
+    if(action.type === 'ADD_AIRLINE') {
+        const newAirline = action.payload
+
+        return [...state, newAirline]
+    }
 
     return state
 }
