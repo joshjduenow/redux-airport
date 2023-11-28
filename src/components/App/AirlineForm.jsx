@@ -7,7 +7,7 @@ function AirlineForm() {
 
   const addAirline = (e) => {
     e.preventDefault();
-
+    setAirlineName("");
     dispatch({
       type: "ADD_AIRLINE",
       payload: airlineName,
